@@ -1,66 +1,104 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>主页</title>
-	</head>
-	<style type="text/css">
-		*{
-			margin: 0;
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>大连万达耐酸泵厂有限公司</title>
+  <meta content="大连万达耐酸泵厂是国内较早生产耐腐蚀泵的专业厂家之一。现已发展成典型集耐腐蚀泵科研、开发、设计、生产制造、实验检测为一体的高科技、先导型的现代化企业。" name="description">
+  <meta content="大连万达,耐酸泵,泵" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.8.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style type="text/css">
+    *{
 			padding: 0;
-			outline: none;
+			margin: 0;
 			box-sizing: border-box;
+			outline: none;
 		}
-		a{
-		position: fixed;
-		font-size: larger;
-		letter-spacing: 16px;
-		color: #c36;
-		text-decoration: none;
-		}
-		body{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			min-height: 100vh;
-			background: linear-gradient(-135deg,#c850c0,#4158d0);
-		}
-		.wrapper{
-			width: 450px;
-			background-color: #fff;
+    .suojin{
+      text-indent: 2em;
+    }
+    .video_back {
+        min-width: 100%;
+        min-height:100%;
+        width: 100%;
+        height: 100%;
+        /*生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。可以根据实际情况修改*/
+        position: absolute;
+        /*这里我试了一下好像只要是矩形的四个角的的点都行,也就是说right:0;bottom:0;也可以*/
+        left: 0;
+        top: 0;
+        /*将视频放在元素的堆叠顺序最底层，以防覆盖其他东西*/
+        z-index: 1;
+        /*被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。*/
+        object-fit: contain;
+    }
+		.wallpaper{
+			width: 400px;
 			padding: 30px;
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			border-radius: 30px;
+      margin: auto;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      transform: translateY(50px);
 		}
-		.wrapper .input-data{
+		.wallpaper .input-data{
 			width: 100%;
 			height: 40px;
 			position: relative;
 		}
-		.wrapper .input-data input{
+		.wallpaper .input-data input{
 			width: 100%;
 			height: 100%;
 			border: none;
-			border-bottom: 2px solid silver;
+			border-bottom: 3px solid rgb(192, 192, 192);
 			font-size: 17px;
 		}
 		.input-data input:focus ~ label,
 		.input-data input:valid ~ label{
-			transform: translateY(-20px);
-			font-size: 15px;
-			color: #4158D0;
+			transform: translateY(30px);
+			font-size: 20px;
+      font-weight: bolder;
+			color: rgb(180, 64, 200);
 		}
-		.wrapper .input-data label{
+		.wallpaper .input-data label{
 			position: absolute;
-			bottom: 10px;
+			bottom: 5px;
 			left: 0;
-			color: grey;
+			color: rgb(200, 50, 100);
 			pointer-events: none;
-			transition: all 0.3s ease;
+			transition: all 0.5s;
 		}
-		.wrapper .input-data .underline{
+		.wallpaper .input-data .underline{
 			position: absolute;
 			bottom: 0px;
-			height: 2px;
+			height: 3px;
 			width: 100%;
 		}
 		.input-data .underline:before{
@@ -68,22 +106,329 @@
 			content: "";
 			height: 100%;
 			width: 100%;
-			background: #4158D0;
+			background: rgba(200, 50, 100, 0.8);
 			transform: scaleX(0);
-			transition:transform 0.3s ease;
+			transition:transform 0.5s;
 		}
 		.input-data input:focus ~ .underline:before,
 		.input-data input:valid ~ .underline:before{
 			transform: scaleX(1);
 		}
-	</style>
-	<body>
-		<div class="wrapper">
-			<form action="http://www.bing.com" class="input-data">
-				<input type="text" name="q" required="" value="" />
-				<div class="underline"></div>
-				<label>大连万达耐酸泵厂有限公司</label>
-			</form>
-		</div>
-	</body>
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"> <span>大连万达耐酸泵厂有限公司</span></a>
+</h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">主页</a></li>
+          <li><a href="about.html">关于</a></li>
+          <li><a href="portfolio.html">产品</a></li>
+          <li class="dropdown"><a href="#"><span>更多</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="portfolio.html"><span>产品详情</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">立式泵</a></li>
+                  <li><a href="#">卧式泵</a></li>
+                  <li><a href="#">消防泵</a></li>
+                </ul>
+              </li>
+              <li><a href="services.html">登录</a></li>
+              <li><a href="team.html">注册</a></li>
+              <li><a href="blog.html">博客</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">质量至上</h2>
+          <p class="animate__animated animate__fadeInUp">产品质量永远是我们坚守的第一道准则，坚持以质量取胜是维护顾客忠诚的最好保证。有品质，才有市场，有改善，才有进步！</p>
+          <a href="portfolio.html" class="btn-get-started animate__animated animate__fadeInUp">了解更多</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">精雕细琢</h2>
+          <p class="animate__animated animate__fadeInUp">我们将精益求精贯彻到底，致力于完善每一处细节。</p>
+          <a href="about.html" class="btn-get-started animate__animated animate__fadeInUp">了解更多</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">互惠共赢</h2>
+          <p class="animate__animated animate__fadeInUp">品质第一，客户至上，相辅相成，共创繁荣。这里带给您看得见的未来，说不尽的精彩！</p>
+          <a href="contact.html" class="btn-get-started animate__animated animate__fadeInUp">了解更多</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><a href="about.html"><i class="bx bxl-dribbble"></i></a></div>
+              <h4 class="title"><a href="about.html">公司介绍</a></h4>
+              <p class="description">国内较早生产耐腐蚀泵的专业厂家之一，现已发展成典型集耐腐蚀泵科研、开发、设计、生产制造、实验检测为一体的高科技、先导型的现代化企业。</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><a href="portfolio.html"><i class="bx bx-tachometer"></i></a></div>
+              <h4 class="title"><a href="portfolio.html">产品介绍</a></h4>
+              <p class="description">已通过ISO9000认证，获得石化设备供货网入网证、《HAF0400核三级泵设计、制造资格证》，执行AP2610、ZSO2585等国内标准。</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><a href="contact.html"><i class="bx bx-file"></i></a></div>
+              <h4 class="title"><a href="contact.html">联系我们</a></h4>
+              <p class="description">对与产品的订购及技术支持、合作等有任何问题，请通过这些渠道与我们联系。</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><a href="https://cn.bing.com/search?q=大连万达耐酸泵厂有限公司"><i class="bx bx-world"></i></a></div>
+              <h4 class="title"><a href="https://cn.bing.com/search?q=大连万达耐酸泵厂有限公司">了解更多</a></h4>
+              <p class="description">质量过硬，特点鲜明，客户广泛，诚信至深。试着通过其它方面深入了解我们？</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <!-- <img src="assets/img/why-us.jpg" class="img-fluid" alt=""> -->
+            <video class="video_back" src="assets/vendor/pump.mp4" muted autoplay="autoplay" poster="assets/img/why-us.jpg" loop="loop">
+              您的浏览器不支持
+          </video>
+            <!-- <a href="assets/pump.mp4" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>我们的优势</h2>
+          <p class="suojin">我厂研制特殊的不锈钢合金材质，是耐腐蚀泵生产制造的关键与核心。目前，我厂已开发研铸出30余种稳定、耐磨不锈钢合金材料，基本满足了30多个系列、1000多个规格泵产品的材质需求。譬如：用哈氏合金泵打盐酸、蒙耐尔合金泵打氢氟酸、904材质泵打稀硫酸，804材质泵打烧碱、CD-4MCu或Cr30材质泵打强磨蚀的料浆、05钢打发烟硝酸、钛材质泵打纯碱、母液、海水等，都是耐腐蚀合金材料泵的成功应用。</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4">
+            <h3>产品创优，应用广泛。</h3>
+            <p class="fst-italic">
+              我厂研制生产的特殊耐腐蚀泵，是专门用于输送强腐蚀性、强磨蚀性、及各种特殊液体。（如高温浓盐酸、高温浓硫酸、发烟硝酸、稀硫酸、氢氟酸、烧碱、热油、矿浆、渣浆、纸浆、料浆、二相流体等以及各种高、低温、易燃、易爆的液态介质），特别广泛地应用于：化工、石油、化肥、冶金、矿山、电站、盐碱业、医药、食品、造纸、酿造、制糖、环保与污水处理等国民经济各领域，只要有特殊液体流动的场合，不锈钢耐腐蚀泵就能发挥高效可靠的作用。
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3>客户广泛，诚信至深。</h3>
+            <p class="fst-italic">
+              多年以来，我厂生产的“万达牌”耐腐蚀泵，已成功地应用在辽化、大化、吉化、大庆、锦化、燕化、鲁化、扬子、镇海、九江、兰化、山东磷铵等石化、化工、化肥行业、及其配套的电厂、电站、污水处理等重工行业。还有福建、黑龙江和吉林造纸厂、辽阳、吉林、江西的化纤厂、四平、吉林华润酿酒公司及浙江制药、东北制药、华北制药等轻工行业, 应用的市场前景越来越广阔。
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="wallpaper">
+      <form action="http://cn.bing.com" class="input-data">
+        <input type="text" name="q" required="" value=""  placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大连万达耐酸泵厂有限公司"/>
+        <div class="underline"></div>
+        <label>Search</label>
+      </form>
+    </div>
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>List Of Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">主页</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">关于</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">登录</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="team.html">注册</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">博客</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">立式泵</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">卧式泵</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">消防泵</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">其他</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Other</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>办公地址：</strong><br>
+              辽宁省大连市沙河口区<br>
+              绿波路63号2-1-2<br>
+              <strong>电话：</strong> 13941149568<br>
+              <strong>传真：</strong> 0411-86840982<br>
+              <strong>座机：</strong> 0411-86840448<br>
+              <strong>邮箱：</strong> dl.wd@163.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Us</h3>
+            <br>
+            <p class="suojin">我们高度重视开放式创新，充分整合技术资源，一直以来与相关院校、科研单位及产业链上下游企业保持紧密合作。</p>
+            <br>
+            <p class="suojin">我们倡导与客户相互信任与尊重。共同建立广泛对等合作和战略伙伴关系，并积极探索在互利基础上的多种合作形式。</p>
+            <!-- <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
