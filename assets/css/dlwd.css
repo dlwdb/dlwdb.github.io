@@ -80,3 +80,19 @@
 .addshadow{
     box-shadow: 10px 10px 10px rgba(0,0,0,.5);
 }
+.lianjie:link {
+    color:white;
+    text-decoration:none;
+}
+.lianjie:visited {
+    color:ghostwhite;
+    text-decoration:none;
+}
+.lianjie:hover {
+    color:lightskyblue;
+    text-decoration:none;
+}
+.lianjie:active {
+    color:royalblue;
+    text-decoration:none;
+}
